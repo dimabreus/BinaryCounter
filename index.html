@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="base">
+            <span>Base:</span>
+            <input type="number" value="2" oninput="formatInput(this, 2, 16); setBase(this.value)">
+        </div>
+
+        <div class="bytes">
+            <div class="byte">
+                <span>0</span>,
+                <span>0</span>,
+                <span>0</span>,
+                <span>0</span>,
+                <span>0</span>,
+                <span>0</span>,
+                <span>0</span>,
+                <span>0</span>
+            </div>
+        </div>
+
+        <div class="add">
+            <input type="number" class="add-value" value="1" oninput="formatInput(this, 1, 1000)">
+            <button onclick="addMultiple()">Add!</button>
+        </div>
+
+        <p class="count">Count is <span>0</span></p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

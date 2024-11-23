@@ -1,0 +1,75 @@
+* {
+  font-family: "Rubik", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: #373737;
+  color: white;
+}
+body button, body input {
+  color: white;
+  background: #2c2c2c;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+body input {
+  -moz-appearance: textfield;
+  text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+body input::-webkit-outer-spin-button, body input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+body .wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+body .wrapper .base {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+body .wrapper .base input {
+  width: 3rem;
+}
+body .wrapper .bytes span {
+  display: inline-block;
+  width: 1rem;
+  text-align: center;
+  border-radius: 2.5px;
+}
+body .wrapper .bytes span.plus {
+  animation: 1s plus;
+}
+body .wrapper .bytes span.minus {
+  animation: 1s minus;
+}
+body .wrapper .add input {
+  width: 4rem;
+}
+
+@keyframes plus {
+  50% {
+    background: lightGreen;
+  }
+}
+@keyframes minus {
+  50% {
+    background: crimson;
+  }
+}/*# sourceMappingURL=style.css.map */
