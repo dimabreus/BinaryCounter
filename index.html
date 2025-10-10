@@ -16,7 +16,7 @@
     <div class="wrapper">
         <div class="base">
             <span>Base:</span>
-            <input type="number" value="2" oninput="formatInput(this, 2, 16); setBase(this.value)">
+            <input type="number" value="2" onchange="formatInput(this, 2, 16); setBase(this.value)">
         </div>
 
         <div class="bytes">
@@ -33,7 +33,7 @@
         </div>
 
         <div class="add">
-            <input type="number" class="add-value" value="1" oninput="formatInput(this, 1, 1000)">
+            <input type="number" class="add-value" value="1" onchange="formatInput(this, 1, 1000)">
             <button onclick="addMultiple()">Add!</button>
         </div>
 
